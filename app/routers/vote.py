@@ -33,5 +33,5 @@ def vote(vote: schemas.Vote, db: session = Depends(database.get_db),
         vote_query.delete(synchronize_session = False)
         db.commit()
 
-        return {"message":"successfully deleted vote" }
+        return {"message":"successfully deleted vote......" }
 
